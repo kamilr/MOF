@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 
-import org.omg.CORBA.Environment;
-
 public class Zad1 {
 
 	private final static double resultExpected = 115.;
@@ -35,15 +33,14 @@ public class Zad1 {
 				System.out.println("Wynik Simpsona to: " + result3 + " b³ad: " + delay3);
 				System.out.println();
 				
-				 writer.append(n + ";" + result1+ ";" + delay1 + ";" + result2 + ";" + delay2 + ";" + result3 + ";" + delay3);
-				 writer.newLine();
+				writer.append(n + ";" + result1+ ";" + delay1 + ";" + result2 + ";" + delay2 + ";" + result3 + ";" + delay3);
+				writer.newLine();
 			}
 
 		  writer.flush();
 		}catch(IOException exception){
 		  System.out.println("Error writing to file");
 		}
-		
 	}
 	
 	private double countRectangle(int start, int end, int precision){
