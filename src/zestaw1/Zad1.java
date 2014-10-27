@@ -16,7 +16,7 @@ public class Zad1 {
 		Zad1 im = new Zad1();
 		int start = 0;
 		int end = 5;
-		int[] precisions = {1, 5, 10, 100, 1000, 10000, 100000, 1000000};
+		int[] precisions = {1, 5, 10, 100, 1000, 10000, 100000, 1000000, 10000000};
 		
 		File file =  new File(".", "result1-1.csv");
 		
